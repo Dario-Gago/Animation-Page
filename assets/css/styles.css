@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+nav{
+    align-items: center;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FCF596;
+    min-height: 4em;
+    color: #FF9C73;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+nav > ul > li > a{
+    color: #FF9C73;
+    text-decoration: none;
+}
+
+.ani-hr {
+    border: 0;
+    height: 2px; 
+    background-color: #FF9C73;
+    width: 0; 
+    animation: ani-hr 5s ease infinite ;
+  }
+main{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    display: grid;
+}
+
+.container{
+    width: 100%;
+    margin: 100px auto;
+}
+
+.container > article{
+    margin: auto;
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: solid 2px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+    transform: rotate(20deg);
+}
+.box:hover strong{
+    opacity: 100%;
+}
+.red{
+    background-color: #ff0000;
+}
+.yellow{
+    background-color: #ffff00;
+}
+.blue{
+    background-color: #0000ff;
+}
+.green{
+    background-color: #008000;
+}
+.orange{
+    background-color: #ffa500;
+}
+.purple{
+    background-color: #800080;
+}
+
+strong{
+    opacity: 0;
+}
+.shop{
+    display: flex;
+    text-align: center;
+    background-color: #faec27;
+    flex-direction: column;
+    margin: 5%;
+}
+.shopCard > img{
+    width: 10%;
+}
+.shopCard > h2{
+    color: #000000;
+}
+.shopCard:hover{
+    background-color: #ffffff;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 2em;
+    width: 100%;
+    background-color: #FCF596;
+}
+footer > h2{
+    color: #FF9C73;
+    text-align: center;
+
+}
+  @keyframes ani-hr {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%; 
+    }
+  }
+  @media (min-width:654px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 70%;
+        margin: auto;
+        
+    }
+    .container-2{
+        max-width: 70%;
+        margin: 0 50px;
+    }
+    .shop{
+        flex-direction: row;
+    }
+  }
+  @media (max-width: 900px) {
+    main{
+        max-width: 100%;
+    }
+  }
